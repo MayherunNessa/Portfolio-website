@@ -13,6 +13,11 @@ body{
     padding: 0;
     margin: 0;
 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     font-family: 'Poppins';
     color: var(--default-color);
 
@@ -105,8 +110,73 @@ header, section{
     width: 100%;
     padding: 4rem 1.2rem;
     text-align: center;
+
 }
 
+section a{
+    text-decoration: none;
+    color: var(--secondary-color);
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 5px;
+
+    position: relative;
+    display: inline-block;
+
+    transition: border 0.3s ease-in-out, color 0.3s ease, transform 0.3s ease;
+}
+section a:hover{
+    border-color: var(--secondary-color);
+}
+
+@media (min-width: 768px) {
+    header, section{
+        max-width: 1000px;
+    }
+    
+    
+}
+.about, .achievements{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* About */
+.about p{
+    text-align: justify;
+}
+.about ul li {
+    list-style: none;
+    display: inline-block;
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+    padding: 2px 10px;
+    margin: 2px;
+
+    border-color: var(--secondary-color);
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.about ul li:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.about .links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+/* Experience */
+.experience a {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
 /* footer */
 footer{
     width: 100vw;
