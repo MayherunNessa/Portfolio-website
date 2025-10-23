@@ -177,6 +177,50 @@ section a:hover{
     color: var(--primary-color);
     border-color: var(--primary-color);
 }
+.experience .exp-item{
+    text-align: left;
+}
+.year {
+    font-size: 22px;
+    font-weight: 300;
+    border-left: 3px solid;
+    padding-left: 10px;
+}
+.exp-item span{
+    font-weight: 900
+    ;
+}
+.exp-item {
+    border: 2px solid var(--primary-color);
+    padding: 20px;
+    margin: 10px; 
+    border-radius: 20px;
+}
+
+/* Achievements */
+.achievement{
+    text-align: left;
+}
+
+.achievement span{
+    font-weight: 900
+    ;
+}
+.achievement {
+    border: 2px solid var(--secondary-color);
+    padding: 20px;
+    margin: 10px; 
+    border-radius: 20px;
+}
+
+/* Contact */
+.contact-item{
+    text-align: left;
+}
+.contact-item span{
+    font-weight: bolder;
+}
+
 /* footer */
 footer{
     width: 100vw;
