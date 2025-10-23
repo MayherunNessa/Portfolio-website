@@ -49,15 +49,28 @@ nav > div {
     color: var(--secondary-color);
     letter-spacing: 2px;
 }
+#menu-toggle{
+    display: none;
+}
+#menu-icon{
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s ease;
+}
 .nav-list {
     list-style-type: none;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.8rem;
     padding: 0;
     margin: 1rem 0 0;
 }
+
+#menu-toggle:checked + #menu-icon + .nav-list {
+    display: flex;
+}
+
 .nav-list > li > a {
     text-decoration: none;
     color: var(--secondary-color);
@@ -75,10 +88,17 @@ nav > div {
     }
 
     .nav-list{
+        
+        display: flex !important;
         flex-direction: row;
         align-items: center;
         margin: 0;
         gap: 1.5rem;
     }
+    #menu-toggle, #menu-icon {
+        display: none;
+    }
 }
+
+
 
