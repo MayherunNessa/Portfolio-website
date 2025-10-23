@@ -100,5 +100,19 @@ nav > div {
     }
 }
 
+/* Headers and sections */
+header, section{
+    width: 100%;
+    padding: 4rem 1.2rem;
+    text-align: center;
+}
 
+/* footer */
+footer{
+    width: 100vw;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 
+}
