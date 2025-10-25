@@ -161,6 +161,7 @@ section a:hover{
 .header h2{
     font-family: 'Poppins';
     font-size: 1.5rem;
+    text-shadow: 5px 5px 15px rgba(219, 135, 18, 0.826);
 }
 
 h1, h2{
