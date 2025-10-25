@@ -158,6 +158,15 @@ section a:hover{
 }
 
 /* Header or Hero section */
+.header h2{
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+}
+
+h1, h2{
+    font-family: 'Abril Fatface', serif;
+    font-size: 3rem;
+}
 
 .header .container, table{
     display: flex;
@@ -165,7 +174,11 @@ section a:hover{
     justify-content: center;
     align-items: center;
 }
-
+.header img {
+    border: 5px solid transparent;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 15px rgba(0,0,0, 0.5);
+}
 @media (min-width: 768px) {
     .header .container{
         flex-direction: row;
