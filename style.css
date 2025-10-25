@@ -214,12 +214,35 @@ section a:hover{
 }
 
 /* Contact */
-.contact-item{
+table tr th{
+    text-align: start;
+    color: var(--primary-color);
+    padding-right: 5px;
+}
+table tr td{
+    color: var(--default-color);
+    padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    table {
+        align-self: center;
+    }
+    
+    
+}
+/* .contact-item{
     text-align: left;
 }
 .contact-item span{
     font-weight: bolder;
-}
+} */
 
 /* footer */
 footer{
